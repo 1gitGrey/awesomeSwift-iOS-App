@@ -13,10 +13,11 @@ target 'AwesomeSwift' do
     pod 'SwiftyMarkdown'
     pod 'SwiftyJSON' # JSON handler
     pod 'SwiftyUserDefaults'
-pod 'AlamofireUIManager'
-pod 'AlamofireRouter', '~> 0.1'
-pod 'UITableViewCellManager', '~> 0.1'
-pod 'SwiftyJSONRealmObject', '~> 0.1' 
+    pod 'AlamofireUIManager'
+    pod 'AlamofireRouter', '~> 0.1'
+    pod 'UITableViewCellManager', '~> 0.1'
+    pod 'SwiftyJSONRealmObject', '~> 0.1'
+    pod 'RealmSwift'
 end
 
 def testing_pods

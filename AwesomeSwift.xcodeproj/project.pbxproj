@@ -25,6 +25,7 @@
 		48AF9E921D3CA7BE001319D3 /* CreditsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48AF9E901D3CA7BE001319D3 /* CreditsCell.xib */; };
 		48AF9E941D3CA843001319D3 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E931D3CA843001319D3 /* CreditsViewController.swift */; };
 		48AF9E961D3CAA0D001319D3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E951D3CAA0D001319D3 /* SnapshotHelper.swift */; };
+		48AF9E9A1D3CBAA1001319D3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E991D3CBAA1001319D3 /* CategoryViewController.swift */; };
 		48D920411CC3BAD000B8DB73 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D920401CC3BAD000B8DB73 /* Configuration.swift */; };
 		48D920431CC3BB2800B8DB73 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D920421CC3BB2800B8DB73 /* Utilities.swift */; };
 		81170BCBF33DD3206F6FEE57 /* Pods_AwesomeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D733F3BF4200F332C33FA408 /* Pods_AwesomeSwift.framework */; };
@@ -76,6 +77,7 @@
 		48AF9E901D3CA7BE001319D3 /* CreditsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsCell.xib; sourceTree = "<group>"; };
 		48AF9E931D3CA843001319D3 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		48AF9E951D3CAA0D001319D3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		48AF9E991D3CBAA1001319D3 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		48D920401CC3BAD000B8DB73 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		48D920421CC3BB2800B8DB73 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		75EFAE44D857A6CE68ADA93B /* Pods-AwesomeSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeSwiftTests/Pods-AwesomeSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				48AF9E971D3CB86C001319D3 /* cell */,
 				486C32A11D008B26004CB872 /* CategoryBrick.swift */,
 				486C32A51D0091A0004CB872 /* CategoryFeedVC.swift */,
+				48AF9E991D3CBAA1001319D3 /* CategoryViewController.swift */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				48AF9E871D3CA53C001319D3 /* OpenSourceIosAppsAPI.swift in Sources */,
 				48AF9E911D3CA7BE001319D3 /* CreditsCell.swift in Sources */,
 				48D920431CC3BB2800B8DB73 /* Utilities.swift in Sources */,
+				48AF9E9A1D3CBAA1001319D3 /* CategoryViewController.swift in Sources */,
 				48D920411CC3BAD000B8DB73 /* Configuration.swift in Sources */,
 				486C32A21D008B26004CB872 /* CategoryBrick.swift in Sources */,
 				486C32AA1D00B6DC004CB872 /* Styles.swift in Sources */,
