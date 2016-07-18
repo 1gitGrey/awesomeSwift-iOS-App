@@ -47,7 +47,9 @@ class CreditsViewController: UIViewController {
 
 }
 
+// MARK: - Table handler
 extension CreditsViewController: UITableViewDataSource {
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
