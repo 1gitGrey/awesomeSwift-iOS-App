@@ -6,56 +6,60 @@
 //  Copyright © 2016 boostco.de. All rights reserved.
 //
 
-/*import UIKit
-
-import SimpleAnimation
-import LeeGo
-import SwiftyUserDefaults
 import SwiftyJSON
+import SwiftyJSONRealmObject
+import RealmSwift
 
-struct AwesomeRepository {
-    let title: String
-    let category: String
-    let description: String
-    let homepage: String
-    let tags: [JSON]
+class RString: Object {
+    dynamic var name = ""
+    
+    override static func primaryKey() -> String? {
+        return "name"
+    }
+}
 
-    init(json: JSON) {
+class Repository: SwiftyJSONRealmObject {
+    
+    dynamic var title = ""
+    dynamic var category: Category?
+    dynamic var descr = ""
+    dynamic var homepage = ""
+    var tags = [RString]()
+    
+    override static func primaryKey() -> String? {
+        
+        return "name"
+    }
+    
+    convenience required init(json: JSON) {
+        
+        self.init()
+        
         title = json["title"].stringValue
-        category = json["category"].stringValue
-        description = json["description"].stringValue
+        descr = json["description"].stringValue
         homepage = json["homepage"].stringValue
-        tags = json["tags"].arrayValue
-    }
-}
-
-extension AwesomeRepository {
-    static func repositories(jsonArray: [JSON]) -> [AwesomeRepository] {
-        return jsonArray.map({
-            json -> AwesomeRepository in
-            return AwesomeRepository(json: json)
-        })
-    }
-}
-
-extension AwesomeRepository: BrickDataSource {
-    func update(targetView: UIView, with brick: Brick) {
-        switch targetView {
-        case let label as UILabel where brick == AwesomeRepositoryBrick.Title:
-            if tags.contains(JSON("linux")) {
-                label.text = "🐧 \(title)"
-            } else {
-                label.text = title
-            }
-        case let button as UIButton where brick == AwesomeRepositoryBrick.Favorite:
-            if Defaults[.Favorites].contains(title) {
-                button.selected = true
-                button.tintColor = kAwesomeColor
-            }
-        case let label as UILabel where brick == AwesomeRepositoryBrick.Description:
-            label.text = description
-        default:
-            break
+        
+        // loop tags
+        for t in json["tags"].arrayValue {
+            let name = t.stringValue
+            
+            let tag = RString()
+            tag.name = name
+            
+            tags.append(tag)
         }
+        
+        // get the cat
+        let cat: Category?
+        do {
+            cat = try Realm().objects(Category.self).filter("id = '\(json["category"].stringValue)'").first!
+        } catch _ {
+            cat = nil
+        }
+        
+        // set the cat
+        category = cat
+        
     }
-}*/
+    
+}
