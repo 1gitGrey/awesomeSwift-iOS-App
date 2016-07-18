@@ -16,17 +16,21 @@ class CreditsViewController: UIViewController {
         "This app is powered by developers of libraries that share their job releasing open source projects on Github.\n\n" +
         "If you want to add a new library, feel free to contribute with a **Pull Request** at https://github.com/matteocrippa/awesome-swift\n\n\n" +
         "This app makes use of these *awesome libraries*:\n\n" +
+        " - Alamofire\n" +
+        " - AlamofireUIManager\n" +
+        " - AlamofireRouter\n" +
         " - DGEElasticPullToRefresh\n" +
         " - Fabric\n" +
         " - Fastlane tools\n" +
-        " - Moya\n" +
         " - Nimble\n" +
         " - Quick\n" +
         " - RAMAnimatedTabBarController\n" +
         " - SwiftyDate\n" +
         " - SwiftyMarkdown\n" +
         " - SwiftyJSON\n" +
-    " - SwiftyUserDefaults\n"
+        " - SwiftyUserDefaults\n" +
+        " - SwiftyJSONRealmObject\n" +
+        " - UITableViewCellManager\n"
 
     override func viewDidLoad() {
         super.viewDidLoad()
