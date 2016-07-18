@@ -19,7 +19,8 @@ class CategoryViewController: BaseViewController {
     
     var categories: Results<Category>? {
         didSet {
-            table!.reloadData()
+            guard let t = table else { return }
+            t.reloadData()
         }
     }
 
@@ -38,7 +39,7 @@ class CategoryViewController: BaseViewController {
 
         t.dg_addPullToRefreshWithActionHandler({ [unowned self] in
 
-            // TODO: update data from remote
+            // update data from remote
             self.getDataFromRemote({ (completed) in
                 if completed == true {
                     self.getDataFromLocale()
@@ -52,7 +53,11 @@ class CategoryViewController: BaseViewController {
         t.dg_setPullToRefreshBackgroundColor(.whiteColor())
 
         // perform update w/ animation delayed by 0.1 sec
-        self.performSelector(#selector(CategoryViewController.updateWithLittleDelay), withObject: nil, afterDelay: 0.1)
+        performSelector(
+            #selector(CategoryViewController.updateWithLittleDelay),
+            withObject: nil,
+            afterDelay: 0.1
+        )
 
     }
 
@@ -103,7 +108,12 @@ extension CategoryViewController {
                 let jsonCats = response["categories"]
                 log.debug(jsonCats)
 
-                let _ = Category(json: jsonCats)
+                let cats = Category(json: jsonCats)
+                
+                // add items to realm
+                self.realm.add(cats, update: true)
+                
+                log.debug(cats)
 
                 completion(completed: true)
 

@@ -29,7 +29,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="lblTitle" destination="mSn-QR-ICB" id="4da-gU-OzZ"/>
+                <outlet property="lblTitle" destination="mSn-QR-ICB" id="S0m-OV-64y"/>
             </connections>
         </tableViewCell>
     </objects>

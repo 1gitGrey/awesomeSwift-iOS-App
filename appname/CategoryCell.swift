@@ -9,9 +9,9 @@
 import UIKit
 
 class CategoryCell: UITableViewCell {
-    
+
     @IBOutlet weak var lblTitle: UILabel?
-    
+
     var category = Category()
 
     override func awakeFromNib() {
@@ -21,15 +21,15 @@ class CategoryCell: UITableViewCell {
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
+
     override func setUI(object: AnyObject?) {
-        
+
         guard let cat = object as? Category else { return }
         category = cat
-        
+
         guard let lbl = lblTitle else { return }
 
         lbl.text = category.title
     }
-    
+
 }

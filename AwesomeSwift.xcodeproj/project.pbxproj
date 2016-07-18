@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		486C32A01D008B17004CB872 /* RepositoryBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C329F1D008B17004CB872 /* RepositoryBrick.swift */; };
 		486C32A41D008B9A004CB872 /* AwesomeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A31D008B9A004CB872 /* AwesomeCategory.swift */; };
-		486C32A61D0091A0004CB872 /* CategoryFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A51D0091A0004CB872 /* CategoryFeedVC.swift */; };
 		486C32A81D00948F004CB872 /* AwesomeSwiftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A71D00948F004CB872 /* AwesomeSwiftAPI.swift */; };
 		486C32AA1D00B6DC004CB872 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A91D00B6DC004CB872 /* Styles.swift */; };
 		486C32AF1D00E0C1004CB872 /* RepositoryFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32AE1D00E0C1004CB872 /* RepositoryFeedVC.swift */; };
@@ -60,7 +59,6 @@
 		4819D7801CAD793000271DD3 /* AwesomeSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		486C329F1D008B17004CB872 /* RepositoryBrick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryBrick.swift; sourceTree = "<group>"; };
 		486C32A31D008B9A004CB872 /* AwesomeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeCategory.swift; sourceTree = "<group>"; };
-		486C32A51D0091A0004CB872 /* CategoryFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryFeedVC.swift; sourceTree = "<group>"; };
 		486C32A71D00948F004CB872 /* AwesomeSwiftAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeSwiftAPI.swift; sourceTree = "<group>"; };
 		486C32A91D00B6DC004CB872 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		486C32AE1D00E0C1004CB872 /* RepositoryFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryFeedVC.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				48AF9E971D3CB86C001319D3 /* cell */,
-				486C32A51D0091A0004CB872 /* CategoryFeedVC.swift */,
 				48AF9E991D3CBAA1001319D3 /* CategoryViewController.swift */,
 			);
 			name = Category;
@@ -584,7 +581,6 @@
 				486C32AF1D00E0C1004CB872 /* RepositoryFeedVC.swift in Sources */,
 				488F66D51C94636A00933CA6 /* AppDelegate.swift in Sources */,
 				486C32A81D00948F004CB872 /* AwesomeSwiftAPI.swift in Sources */,
-				486C32A61D0091A0004CB872 /* CategoryFeedVC.swift in Sources */,
 				48AF9E941D3CA843001319D3 /* CreditsViewController.swift in Sources */,
 				486C32B11D00E105004CB872 /* AwesomeRepository.swift in Sources */,
 				486C32A01D008B17004CB872 /* RepositoryBrick.swift in Sources */,
