@@ -15,7 +15,6 @@
 		486C32AA1D00B6DC004CB872 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A91D00B6DC004CB872 /* Styles.swift */; };
 		486C32AF1D00E0C1004CB872 /* RepositoryFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32AE1D00E0C1004CB872 /* RepositoryFeedVC.swift */; };
 		486C32B11D00E105004CB872 /* AwesomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32B01D00E105004CB872 /* AwesomeRepository.swift */; };
-		4880A86F1D0488790006424E /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4880A86E1D0488790006424E /* Credits.swift */; };
 		488F66D51C94636A00933CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488F66D41C94636A00933CA6 /* AppDelegate.swift */; };
 		488F66DA1C94636A00933CA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488F66D81C94636A00933CA6 /* Main.storyboard */; };
 		488F66DC1C94636A00933CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488F66DB1C94636A00933CA6 /* Assets.xcassets */; };
@@ -63,7 +62,6 @@
 		486C32AE1D00E0C1004CB872 /* RepositoryFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryFeedVC.swift; sourceTree = "<group>"; };
 		486C32B01D00E105004CB872 /* AwesomeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeRepository.swift; sourceTree = "<group>"; };
 		4877098E1CC3EF4500C1E633 /* AwesomeSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4880A86E1D0488790006424E /* Credits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
 		488F66D11C94636A00933CA6 /* AwesomeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488F66D41C94636A00933CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		488F66D91C94636A00933CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +114,7 @@
 		4846D5221CC280220052C7BF /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				48AF9E981D3CB872001319D3 /* cell */,
 				486C329F1D008B17004CB872 /* RepositoryBrick.swift */,
 				486C32AE1D00E0C1004CB872 /* RepositoryFeedVC.swift */,
 			);
@@ -125,18 +124,11 @@
 		486C32AB1D00BD53004CB872 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				48AF9E971D3CB86C001319D3 /* cell */,
 				486C32A11D008B26004CB872 /* CategoryBrick.swift */,
 				486C32A51D0091A0004CB872 /* CategoryFeedVC.swift */,
 			);
 			name = Category;
-			sourceTree = "<group>";
-		};
-		4880A86D1D0488590006424E /* Credits */ = {
-			isa = PBXGroup;
-			children = (
-				4880A86E1D0488790006424E /* Credits.swift */,
-			);
-			name = Credits;
 			sourceTree = "<group>";
 		};
 		4880A8721D048A9E0006424E /* Credits */ = {
@@ -202,7 +194,6 @@
 		488F67061C9471DE00933CA6 /* 📦Model */ = {
 			isa = PBXGroup;
 			children = (
-				4880A86D1D0488590006424E /* Credits */,
 				489102311CA9BDF80035403A /* Repository */,
 				489102321CA9BE000035403A /* Category */,
 			);
@@ -249,6 +240,20 @@
 			children = (
 				48AF9E8F1D3CA7BE001319D3 /* CreditsCell.swift */,
 				48AF9E901D3CA7BE001319D3 /* CreditsCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		48AF9E971D3CB86C001319D3 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		48AF9E981D3CB872001319D3 /* cell */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -555,7 +560,6 @@
 				48D920431CC3BB2800B8DB73 /* Utilities.swift in Sources */,
 				48D920411CC3BAD000B8DB73 /* Configuration.swift in Sources */,
 				486C32A21D008B26004CB872 /* CategoryBrick.swift in Sources */,
-				4880A86F1D0488790006424E /* Credits.swift in Sources */,
 				486C32AA1D00B6DC004CB872 /* Styles.swift in Sources */,
 				486C32AF1D00E0C1004CB872 /* RepositoryFeedVC.swift in Sources */,
 				488F66D51C94636A00933CA6 /* AppDelegate.swift in Sources */,
