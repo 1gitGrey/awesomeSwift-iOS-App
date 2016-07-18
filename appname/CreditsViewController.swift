@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreditsViewController: UIViewController {
+class CreditsViewController: BaseViewController {
     
     @IBOutlet weak var table: UITableView?
     
