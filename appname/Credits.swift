@@ -6,7 +6,7 @@
 //  Copyright © 2016 boostco.de. All rights reserved.
 //
 
-import LeeGo
+/*import LeeGo
 import SwiftyMarkdown
 
 struct Credits {
@@ -36,4 +36,4 @@ extension Credits: BrickDataSource {
             break
         }
     }
-}
+}*/

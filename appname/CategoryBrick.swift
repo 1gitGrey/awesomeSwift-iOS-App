@@ -6,7 +6,7 @@
 //  Copyright © 2016 boostco.de. All rights reserved.
 //
 
-import LeeGo
+/*import LeeGo
 import UIKit
 
 enum AwesomeCategoryBrick: BrickBuilderType {
@@ -56,4 +56,4 @@ extension AwesomeCategoryBrick {
             }
         }
     }
-}
+}*/

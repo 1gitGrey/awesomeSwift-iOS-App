@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4819D7831CAD793000271DD3 /* AwesomeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4819D7821CAD793000271DD3 /* AwesomeSwiftTests.swift */; };
 		486C32A01D008B17004CB872 /* RepositoryBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C329F1D008B17004CB872 /* RepositoryBrick.swift */; };
 		486C32A21D008B26004CB872 /* CategoryBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A11D008B26004CB872 /* CategoryBrick.swift */; };
 		486C32A41D008B9A004CB872 /* AwesomeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A31D008B9A004CB872 /* AwesomeCategory.swift */; };
@@ -16,14 +15,17 @@
 		486C32AA1D00B6DC004CB872 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A91D00B6DC004CB872 /* Styles.swift */; };
 		486C32AF1D00E0C1004CB872 /* RepositoryFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32AE1D00E0C1004CB872 /* RepositoryFeedVC.swift */; };
 		486C32B11D00E105004CB872 /* AwesomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32B01D00E105004CB872 /* AwesomeRepository.swift */; };
-		487709981CC3EF9600C1E633 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488F67021C94719D00933CA6 /* SnapshotHelper.swift */; };
 		4880A86F1D0488790006424E /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4880A86E1D0488790006424E /* Credits.swift */; };
-		4880A8711D0488EA0006424E /* CreditsBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4880A8701D0488EA0006424E /* CreditsBrick.swift */; };
-		4880A8741D048ADE0006424E /* CreditsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4880A8731D048ADE0006424E /* CreditsVC.swift */; };
 		488F66D51C94636A00933CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488F66D41C94636A00933CA6 /* AppDelegate.swift */; };
 		488F66DA1C94636A00933CA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488F66D81C94636A00933CA6 /* Main.storyboard */; };
 		488F66DC1C94636A00933CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488F66DB1C94636A00933CA6 /* Assets.xcassets */; };
 		488F66DF1C94636A00933CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488F66DD1C94636A00933CA6 /* LaunchScreen.storyboard */; };
+		48AF9E871D3CA53C001319D3 /* OpenSourceIosAppsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E861D3CA53C001319D3 /* OpenSourceIosAppsAPI.swift */; };
+		48AF9E8E1D3CA744001319D3 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E8D1D3CA744001319D3 /* CellManager.swift */; };
+		48AF9E911D3CA7BE001319D3 /* CreditsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E8F1D3CA7BE001319D3 /* CreditsCell.swift */; };
+		48AF9E921D3CA7BE001319D3 /* CreditsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48AF9E901D3CA7BE001319D3 /* CreditsCell.xib */; };
+		48AF9E941D3CA843001319D3 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E931D3CA843001319D3 /* CreditsViewController.swift */; };
+		48AF9E961D3CAA0D001319D3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E951D3CAA0D001319D3 /* SnapshotHelper.swift */; };
 		48D920411CC3BAD000B8DB73 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D920401CC3BAD000B8DB73 /* Configuration.swift */; };
 		48D920431CC3BB2800B8DB73 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D920421CC3BB2800B8DB73 /* Utilities.swift */; };
 		81170BCBF33DD3206F6FEE57 /* Pods_AwesomeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D733F3BF4200F332C33FA408 /* Pods_AwesomeSwift.framework */; };
@@ -52,8 +54,6 @@
 		27F15110D0A93456F99654E0 /* Pods-AwesomeSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeSwift/Pods-AwesomeSwift.release.xcconfig"; sourceTree = "<group>"; };
 		3DD74480D3C6AFC5057CF3F4 /* Pods-AwesomeSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeSwiftTests/Pods-AwesomeSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4819D7801CAD793000271DD3 /* AwesomeSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4819D7821CAD793000271DD3 /* AwesomeSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeSwiftTests.swift; sourceTree = "<group>"; };
-		4819D7841CAD793000271DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		486C329F1D008B17004CB872 /* RepositoryBrick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryBrick.swift; sourceTree = "<group>"; };
 		486C32A11D008B26004CB872 /* CategoryBrick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBrick.swift; sourceTree = "<group>"; };
 		486C32A31D008B9A004CB872 /* AwesomeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeCategory.swift; sourceTree = "<group>"; };
@@ -64,17 +64,20 @@
 		486C32B01D00E105004CB872 /* AwesomeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeRepository.swift; sourceTree = "<group>"; };
 		4877098E1CC3EF4500C1E633 /* AwesomeSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4880A86E1D0488790006424E /* Credits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
-		4880A8701D0488EA0006424E /* CreditsBrick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsBrick.swift; sourceTree = "<group>"; };
-		4880A8731D048ADE0006424E /* CreditsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsVC.swift; sourceTree = "<group>"; };
 		488F66D11C94636A00933CA6 /* AwesomeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488F66D41C94636A00933CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		488F66D91C94636A00933CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		488F66DB1C94636A00933CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		488F66DE1C94636A00933CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		488F66E01C94636A00933CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		488F67021C94719D00933CA6 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = ../appnameUITests/SnapshotHelper.swift; sourceTree = "<group>"; };
 		4891020E1CA833B30035403A /* AwesomeSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeSwiftUITests.swift; sourceTree = "<group>"; };
 		489102101CA833B30035403A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48AF9E861D3CA53C001319D3 /* OpenSourceIosAppsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSourceIosAppsAPI.swift; sourceTree = "<group>"; };
+		48AF9E8D1D3CA744001319D3 /* CellManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
+		48AF9E8F1D3CA7BE001319D3 /* CreditsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsCell.swift; sourceTree = "<group>"; };
+		48AF9E901D3CA7BE001319D3 /* CreditsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsCell.xib; sourceTree = "<group>"; };
+		48AF9E931D3CA843001319D3 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		48AF9E951D3CAA0D001319D3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		48D920401CC3BAD000B8DB73 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		48D920421CC3BB2800B8DB73 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		75EFAE44D857A6CE68ADA93B /* Pods-AwesomeSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeSwiftTests/Pods-AwesomeSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,18 +113,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4819D7811CAD793000271DD3 /* AwesomeSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				4862EBCC1CAFFA80002D3A54 /* 📡Net */,
-				489102291CA9B63B0035403A /* 📦Model */,
-				4891022A1CA9B6610035403A /* 📱VController */,
-				4819D7821CAD793000271DD3 /* AwesomeSwiftTests.swift */,
-				4819D7841CAD793000271DD3 /* Info.plist */,
-			);
-			path = AwesomeSwiftTests;
-			sourceTree = "<group>";
-		};
 		4846D5221CC280220052C7BF /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,13 +120,6 @@
 				486C32AE1D00E0C1004CB872 /* RepositoryFeedVC.swift */,
 			);
 			name = Repository;
-			sourceTree = "<group>";
-		};
-		4862EBCC1CAFFA80002D3A54 /* 📡Net */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "📡Net";
 			sourceTree = "<group>";
 		};
 		486C32AB1D00BD53004CB872 /* Category */ = {
@@ -158,8 +142,8 @@
 		4880A8721D048A9E0006424E /* Credits */ = {
 			isa = PBXGroup;
 			children = (
-				4880A8701D0488EA0006424E /* CreditsBrick.swift */,
-				4880A8731D048ADE0006424E /* CreditsVC.swift */,
+				48AF9E881D3CA6F0001319D3 /* cell */,
+				48AF9E931D3CA843001319D3 /* CreditsViewController.swift */,
 			);
 			name = Credits;
 			sourceTree = "<group>";
@@ -169,7 +153,6 @@
 			children = (
 				488F66D31C94636A00933CA6 /* AwesomeSwift */,
 				4891020D1CA833B30035403A /* AwesomeSwiftUITests */,
-				4819D7811CAD793000271DD3 /* AwesomeSwiftTests */,
 				488F66D21C94636A00933CA6 /* Products */,
 				7F20B049FBF56E30CAB06A67 /* Pods */,
 				AFEF66ED79F8FBFDC8173B0B /* Frameworks */,
@@ -211,6 +194,7 @@
 				4880A8721D048A9E0006424E /* Credits */,
 				486C32AB1D00BD53004CB872 /* Category */,
 				4846D5221CC280220052C7BF /* Repository */,
+				48AF9E8D1D3CA744001319D3 /* CellManager.swift */,
 			);
 			name = "📱VController";
 			sourceTree = "<group>";
@@ -229,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				486C32A71D00948F004CB872 /* AwesomeSwiftAPI.swift */,
+				48AF9E861D3CA53C001319D3 /* OpenSourceIosAppsAPI.swift */,
 			);
 			name = "📡Net";
 			sourceTree = "<group>";
@@ -237,26 +222,10 @@
 			isa = PBXGroup;
 			children = (
 				4891020E1CA833B30035403A /* AwesomeSwiftUITests.swift */,
-				488F67021C94719D00933CA6 /* SnapshotHelper.swift */,
+				48AF9E951D3CAA0D001319D3 /* SnapshotHelper.swift */,
 				489102101CA833B30035403A /* Info.plist */,
 			);
 			path = AwesomeSwiftUITests;
-			sourceTree = "<group>";
-		};
-		489102291CA9B63B0035403A /* 📦Model */ = {
-			isa = PBXGroup;
-			children = (
-				489102361CA9C0930035403A /* Repository */,
-				489102371CA9C09A0035403A /* Category */,
-			);
-			name = "📦Model";
-			sourceTree = "<group>";
-		};
-		4891022A1CA9B6610035403A /* 📱VController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "📱VController";
 			sourceTree = "<group>";
 		};
 		489102311CA9BDF80035403A /* Repository */ = {
@@ -275,18 +244,13 @@
 			name = Category;
 			sourceTree = "<group>";
 		};
-		489102361CA9C0930035403A /* Repository */ = {
+		48AF9E881D3CA6F0001319D3 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				48AF9E8F1D3CA7BE001319D3 /* CreditsCell.swift */,
+				48AF9E901D3CA7BE001319D3 /* CreditsCell.xib */,
 			);
-			name = Repository;
-			sourceTree = "<group>";
-		};
-		489102371CA9C09A0035403A /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Category;
+			name = cell;
 			sourceTree = "<group>";
 		};
 		7F20B049FBF56E30CAB06A67 /* Pods */ = {
@@ -439,6 +403,7 @@
 			files = (
 				488F66DF1C94636A00933CA6 /* LaunchScreen.storyboard in Resources */,
 				488F66DC1C94636A00933CA6 /* Assets.xcassets in Resources */,
+				48AF9E921D3CA7BE001319D3 /* CreditsCell.xib in Resources */,
 				488F66DA1C94636A00933CA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,7 +534,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4819D7831CAD793000271DD3 /* AwesomeSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				487709981CC3EF9600C1E633 /* SnapshotHelper.swift in Sources */,
+				48AF9E961D3CAA0D001319D3 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +550,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				486C32A41D008B9A004CB872 /* AwesomeCategory.swift in Sources */,
-				4880A8711D0488EA0006424E /* CreditsBrick.swift in Sources */,
+				48AF9E871D3CA53C001319D3 /* OpenSourceIosAppsAPI.swift in Sources */,
+				48AF9E911D3CA7BE001319D3 /* CreditsCell.swift in Sources */,
 				48D920431CC3BB2800B8DB73 /* Utilities.swift in Sources */,
 				48D920411CC3BAD000B8DB73 /* Configuration.swift in Sources */,
 				486C32A21D008B26004CB872 /* CategoryBrick.swift in Sources */,
@@ -596,9 +561,10 @@
 				488F66D51C94636A00933CA6 /* AppDelegate.swift in Sources */,
 				486C32A81D00948F004CB872 /* AwesomeSwiftAPI.swift in Sources */,
 				486C32A61D0091A0004CB872 /* CategoryFeedVC.swift in Sources */,
-				4880A8741D048ADE0006424E /* CreditsVC.swift in Sources */,
+				48AF9E941D3CA843001319D3 /* CreditsViewController.swift in Sources */,
 				486C32B11D00E105004CB872 /* AwesomeRepository.swift in Sources */,
 				486C32A01D008B17004CB872 /* RepositoryBrick.swift in Sources */,
+				48AF9E8E1D3CA744001319D3 /* CellManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

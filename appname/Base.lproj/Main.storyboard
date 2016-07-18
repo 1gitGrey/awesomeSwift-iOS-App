@@ -35,7 +35,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Hy-qn-r2c" id="mQw-IL-ChM">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uI-RJ-ZyS" customClass="DOFavoriteButton" customModule="DOFavoriteButton">
@@ -130,9 +130,6 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="RkY-8s-h77" kind="relationship" relationship="rootViewController" id="zHb-4m-5lt"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zQJ-si-xY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="4NZ-S4-jkm" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
@@ -147,59 +144,6 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="1224" y="281"/>
-        </scene>
-        <!--Categories-->
-        <scene sceneID="cdT-ep-xmM">
-            <objects>
-                <collectionViewController storyboardIdentifier="CategoryFeedVC" id="RkY-8s-h77" customClass="CategoryFeedVC" customModule="AwesomeSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="ehv-CY-J2S">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="4bF-bM-nzc">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells/>
-                        <connections>
-                            <outlet property="dataSource" destination="RkY-8s-h77" id="FiZ-Ih-rOe"/>
-                            <outlet property="delegate" destination="RkY-8s-h77" id="Sm1-sP-97G"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="Categories" id="vgH-1F-bYd"/>
-                    <connections>
-                        <segue destination="fpO-nN-vlM" kind="show" identifier="showRepos" id="dXt-Zx-TkY"/>
-                    </connections>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="izM-cw-tVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2032" y="272"/>
-        </scene>
-        <!--Repository FeedVC-->
-        <scene sceneID="TVb-eq-Ynv">
-            <objects>
-                <collectionViewController id="fpO-nN-vlM" customClass="RepositoryFeedVC" customModule="AwesomeSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="y6Z-cj-UCj">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8TH-h5-5fV">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells/>
-                        <connections>
-                            <outlet property="dataSource" destination="fpO-nN-vlM" id="W6O-XW-NbO"/>
-                            <outlet property="delegate" destination="fpO-nN-vlM" id="w6c-xy-7EB"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="mwE-WW-3E9"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Zd-k7-xYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2808" y="272"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="0w5-Hg-Fwy">
@@ -258,7 +202,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Ihf-Ar-fbX" kind="relationship" relationship="rootViewController" id="MOH-il-Tou"/>
+                        <segue destination="3WO-ld-U3k" kind="relationship" relationship="rootViewController" id="9IK-4b-k2j"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ora-2y-Xan" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -275,30 +219,42 @@
             </objects>
             <point key="canvasLocation" x="1220" y="1792"/>
         </scene>
-        <!--Credits-->
-        <scene sceneID="zBe-El-vi4">
+        <!--Credits View Controller-->
+        <scene sceneID="SKZ-0D-Epj">
             <objects>
-                <collectionViewController id="Ihf-Ar-fbX" customClass="CreditsVC" customModule="AwesomeSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="9Jm-1U-nJJ">
+                <viewController id="3WO-ld-U3k" customClass="CreditsViewController" customModule="AwesomeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lpT-db-S14"/>
+                        <viewControllerLayoutGuide type="bottom" id="uVy-wf-rfu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nnS-oK-6n4">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N0p-Ru-j2a">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells/>
-                        <connections>
-                            <outlet property="dataSource" destination="Ihf-Ar-fbX" id="7MW-XZ-XQp"/>
-                            <outlet property="delegate" destination="Ihf-Ar-fbX" id="pkE-5H-g5l"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="Credits" id="UZO-LU-nNq"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oJ4-Pw-og5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1xw-K4-ibZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="3WO-ld-U3k" id="r6Y-Yo-alR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1xw-K4-ibZ" firstAttribute="top" secondItem="lpT-db-S14" secondAttribute="bottom" id="9g9-zk-xoM"/>
+                            <constraint firstItem="1xw-K4-ibZ" firstAttribute="leading" secondItem="nnS-oK-6n4" secondAttribute="leading" id="JIu-lU-dEW"/>
+                            <constraint firstAttribute="trailing" secondItem="1xw-K4-ibZ" secondAttribute="trailing" id="bfi-7Z-bTW"/>
+                            <constraint firstItem="uVy-wf-rfu" firstAttribute="top" secondItem="1xw-K4-ibZ" secondAttribute="bottom" id="fkZ-ZT-BEJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ddv-WW-Q21"/>
+                    <connections>
+                        <outlet property="table" destination="1xw-K4-ibZ" id="WDs-us-e0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gov-oy-tbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="1804"/>
+            <point key="canvasLocation" x="1851" y="1792"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="Lpk-JG-zUL">
@@ -327,9 +283,6 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="fpO-nN-vlM" kind="relationship" relationship="rootViewController" id="oSc-ZG-VWu"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0j-LD-ure" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="ddP-mg-rG1" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
@@ -351,7 +304,4 @@
         <image name="favorite" width="25" height="25"/>
         <image name="repos" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="oSc-ZG-VWu"/>
-    </inferredMetricsTieBreakers>
 </document>

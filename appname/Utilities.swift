@@ -6,17 +6,13 @@
 //  Copyright © 2016 boostco.de. All rights reserved.
 //
 
-import LeeGo
 import SafariServices
 import SwiftyUserDefaults
 import UIKit
 
-protocol BrickConvertible {
-    func brick() -> Brick
-}
 
 // MARK: - Defaults
-extension DefaultsKeys {
+/*extension DefaultsKeys {
     static let Categories = DefaultsKey<[AwesomeCategory]?>("categories")
     static let Favorites = DefaultsKey<[String]>("favorites")
 }
@@ -26,7 +22,7 @@ extension NSUserDefaults {
         get { return unarchive(key) }
         set { archive(key, newValue) }
     }
-}
+}*/
 
 // MARK: - Safari
 extension SFSafariViewController {
@@ -60,11 +56,6 @@ extension UIScrollView {
     func dg_stopScrollingAnimation() {}
 }
 
-extension UICollectionViewCell {
-    override public func preferredLayoutAttributesFittingAttributes(layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-        return lg_fittingHeightLayoutAttributes(layoutAttributes)
-    }
-}
 
 // UIButton
 extension UIButton {

@@ -6,7 +6,7 @@
 //  Copyright © 2016 boostco.de. All rights reserved.
 //
 
-import UIKit
+/*import UIKit
 
 import SimpleAnimation
 import LeeGo
@@ -58,4 +58,4 @@ extension AwesomeRepository: BrickDataSource {
             break
         }
     }
-}
+}*/

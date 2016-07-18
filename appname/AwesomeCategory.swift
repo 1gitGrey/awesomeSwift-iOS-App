@@ -6,7 +6,7 @@
 //  Copyright © 2016 boostco.de. All rights reserved.
 //
 
-import LeeGo
+/*import LeeGo
 import SwiftyJSON
 
 struct AwesomeCategory {
@@ -41,4 +41,4 @@ extension AwesomeCategory: BrickDataSource {
             break
         }
     }
-}
+}*/

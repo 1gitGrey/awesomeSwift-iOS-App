@@ -6,7 +6,7 @@
 //  Copyright © 2016 boostco.de. All rights reserved.
 //
 
-import DGElasticPullToRefresh_CanStartLoading
+/*import DGElasticPullToRefresh_CanStartLoading
 import LeeGo
 import SafariServices
 import SwiftyUserDefaults
@@ -207,4 +207,4 @@ extension RepositoryFeedVC: UISearchBarDelegate {
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
     }
-}
+}*/

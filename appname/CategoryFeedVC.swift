@@ -6,7 +6,7 @@
 //  Copyright © 2016 boostco.de. All rights reserved.
 //
 
-import DGElasticPullToRefresh_CanStartLoading
+/*import DGElasticPullToRefresh_CanStartLoading
 import LeeGo
 import SwiftyJSON
 import SwiftyUserDefaults
@@ -140,4 +140,4 @@ extension CategoryFeedVC {
         super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
     }
 
-}
+}*/
