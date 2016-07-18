@@ -16,13 +16,13 @@ class BaseViewController: UIViewController {
     // swiftlint:disable:next force_cast
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     let netManager = AlamofireUIManager.sharedInstance
-    
+
     // swiftlint:disable:next force_try
     let realm = try! Realm()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         netManager.delegate = self
     }
 

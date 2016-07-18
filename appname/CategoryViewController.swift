@@ -9,6 +9,7 @@
 import AlamofireRouter
 import DGElasticPullToRefresh_CanStartLoading
 import RealmSwift
+import SwiftyJSONRealmObject
 import UIKit
 
 class CategoryViewController: BaseViewController {
@@ -108,11 +109,14 @@ extension CategoryViewController {
                 let jsonCats = response["categories"]
                 log.debug(jsonCats)
 
-                let cats = Category(json: jsonCats)
+                let cats = SwiftyJSONRealmObject.createList(ofType: Category.self, fromJson: jsonCats)
                 
-                // add items to realm
-                self.realm.add(cats, update: true)
-                
+                // swiftlint:disable:next force_try
+                try! self.realm.write({
+                    // store cats in realm
+                    self.realm.add(cats, update: true)
+                })
+
                 log.debug(cats)
 
                 completion(completed: true)
