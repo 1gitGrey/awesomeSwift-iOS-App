@@ -130,6 +130,9 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A0i-g0-Gpq" kind="relationship" relationship="rootViewController" id="BI5-m8-0yK"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zQJ-si-xY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="4NZ-S4-jkm" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
@@ -144,6 +147,40 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="1224" y="281"/>
+        </scene>
+        <!--Categories-->
+        <scene sceneID="Seu-zr-Tzn">
+            <objects>
+                <viewController id="A0i-g0-Gpq" customClass="CategoryViewController" customModule="AwesomeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z1o-g4-D2R"/>
+                        <viewControllerLayoutGuide type="bottom" id="HBw-EJ-xsi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lCj-zo-ofv">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wrU-iz-opw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wrU-iz-opw" firstAttribute="leading" secondItem="lCj-zo-ofv" secondAttribute="leading" id="FCM-VH-yF1"/>
+                            <constraint firstItem="HBw-EJ-xsi" firstAttribute="top" secondItem="wrU-iz-opw" secondAttribute="bottom" id="XcO-p5-63G"/>
+                            <constraint firstItem="wrU-iz-opw" firstAttribute="top" secondItem="z1o-g4-D2R" secondAttribute="bottom" id="byM-EA-heD"/>
+                            <constraint firstAttribute="trailing" secondItem="wrU-iz-opw" secondAttribute="trailing" id="o7L-LM-dwn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Categories" id="OHH-nP-98Q"/>
+                    <connections>
+                        <outlet property="table" destination="wrU-iz-opw" id="0Ry-sQ-0f3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMZ-t4-sed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="281"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="0w5-Hg-Fwy">
@@ -254,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gov-oy-tbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851" y="1792"/>
+            <point key="canvasLocation" x="1941" y="1792"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="Lpk-JG-zUL">

@@ -11,6 +11,11 @@ import UITableViewCellManager
 enum CellManager: UITableViewCellStructureDataSource {
     
     case creditsCell
+
+    case repositoryCell
+
+    case categoryCell
+
     
     var cellStructure: UITableViewCellStructure {
         
@@ -19,6 +24,12 @@ enum CellManager: UITableViewCellStructureDataSource {
         case .creditsCell:
             return UITableViewCellStructure(type: CreditsCell(), identifier: "CreditsCell", nib: "CreditsCell")
             
+            
+        case .repositoryCell:
+            return UITableViewCellStructure(type: RepositoryCell(), identifier: "RepositoryCell", nib: "RepositoryCell")
+            
+        case .categoryCell:
+            return UITableViewCellStructure(type: CategoryCell(), identifier: "CategoryCell", nib: "CategoryCell")
         }
         
     }
