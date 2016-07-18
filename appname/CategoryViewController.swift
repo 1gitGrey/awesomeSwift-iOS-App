@@ -8,6 +8,7 @@
 
 import AlamofireRouter
 import DGElasticPullToRefresh_CanStartLoading
+import RealmSwift
 import UIKit
 
 class CategoryViewController: BaseViewController {
@@ -15,6 +16,13 @@ class CategoryViewController: BaseViewController {
     @IBOutlet weak var table: UITableView?
 
     var apiNet: RouterProtocol?
+    
+    var categories: Results<Category>? {
+        didSet {
+            table!.reloadData()
+        }
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,26 +31,21 @@ class CategoryViewController: BaseViewController {
         let loadingView = DGElasticPullToRefreshLoadingViewCircle()
         loadingView.tintColor = .whiteColor()
         
+        // get data from locale
+        getDataFromLocale()
+        
         guard let t = table else { return }
 
         t.dg_addPullToRefreshWithActionHandler({ [unowned self] in
 
             // TODO: update data from remote
-
-            // update data
-            /*self.api.getRepos() { json, error in
-                if error != nil {
-                    log.error(error)
-                } else {
-                    awesomeJSON = json
-                    if let cats = json?["categories"].arrayValue {
-                        self.elements = AwesomeCategory.categories(cats).sort({ $0.title.lowercaseString < $1.title.lowercaseString })
-                        //Defaults[.categories] = self.elements
-                        self.collectionView!.dg_stopLoading()
-                    }
+            self.getDataFromRemote({ (completed) in
+                if completed == true {
+                    self.getDataFromLocale()
                 }
-                
-            }*/
+                t.dg_stopLoading()
+            })
+
 
             }, loadingView: loadingView)
         t.dg_setPullToRefreshFillColor(UIColor.awesomeColor())
@@ -56,7 +59,7 @@ class CategoryViewController: BaseViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
 
     /*
     // MARK: - Navigation
@@ -78,17 +81,52 @@ extension CategoryViewController {
         t.dg_startLoading()
     }
 
+    // MARK: - Local data
+    func getDataFromLocale() {
+
+        categories = realm.objects(Category).sorted("title")
+
+        log.debug(categories)
+
+    }
+
+
+    // MARK: - Remote data
+    func getDataFromRemote(completion: (completed: Bool) -> ()) {
+
+        netManager.request(
+            AwesomeSwiftAPI.getJson(),
+            showSpinner: false,
+            showError: false,
+            completionHandler: { response in
+
+                let jsonCats = response["categories"]
+                log.debug(jsonCats)
+
+                let _ = Category(json: jsonCats)
+
+                completion(completed: true)
+
+            }, errorHandler: { error in
+
+                log.error(error)
+                completion(completed: false)
+
+        })
+
+    }
 }
 
 // MARK: - Table handler
 extension CategoryViewController: UITableViewDataSource {
-    
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        guard let cats = categories else { return 0 }
+        return cats.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cat = nil
+        guard let cat = categories![indexPath.row] as? Category else { return UITableViewCell() }
         return tableView.setUICell(CellManager.categoryCell, object: cat)
     }
 }
