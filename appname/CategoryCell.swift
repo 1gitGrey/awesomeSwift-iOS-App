@@ -11,16 +11,25 @@ import UIKit
 class CategoryCell: UITableViewCell {
     
     @IBOutlet weak var lblTitle: UILabel?
+    
+    var category = Category()
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    override func setUI(object: AnyObject?) {
+        
+        guard let cat = object as? Category else { return }
+        category = cat
+        
+        guard let lbl = lblTitle else { return }
 
-        // Configure the view for the selected state
+        lbl.text = category.title
     }
     
 }

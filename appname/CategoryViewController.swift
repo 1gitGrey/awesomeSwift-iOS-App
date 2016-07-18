@@ -10,25 +10,25 @@ import AlamofireRouter
 import DGElasticPullToRefresh_CanStartLoading
 import UIKit
 
-class CategoryViewController: UIViewController {
-    
+class CategoryViewController: BaseViewController {
+
     @IBOutlet weak var table: UITableView?
-    
+
     var apiNet: RouterProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // pull to refresh setup
         let loadingView = DGElasticPullToRefreshLoadingViewCircle()
         loadingView.tintColor = .whiteColor()
         
         guard let t = table else { return }
-        
+
         t.dg_addPullToRefreshWithActionHandler({ [unowned self] in
-            
+
             // TODO: update data from remote
-            
+
             // update data
             /*self.api.getRepos() { json, error in
                 if error != nil {
@@ -43,11 +43,11 @@ class CategoryViewController: UIViewController {
                 }
                 
             }*/
-            
+
             }, loadingView: loadingView)
         t.dg_setPullToRefreshFillColor(UIColor.awesomeColor())
         t.dg_setPullToRefreshBackgroundColor(.whiteColor())
-        
+
         // perform update w/ animation delayed by 0.1 sec
         self.performSelector(#selector(CategoryViewController.updateWithLittleDelay), withObject: nil, afterDelay: 0.1)
 
@@ -71,7 +71,7 @@ class CategoryViewController: UIViewController {
 }
 
 extension CategoryViewController {
-    
+
     // MARK: - Delayed update
     func updateWithLittleDelay() {
         guard let t = table else { return }
@@ -86,8 +86,9 @@ extension CategoryViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    
+
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cat = nil
+        return tableView.setUICell(CellManager.categoryCell, object: cat)
     }
 }
