@@ -19,36 +19,35 @@ class RString: Object {
 }
 
 class Repository: SwiftyJSONRealmObject {
-    
+
     dynamic var title = ""
     dynamic var category: Category?
     dynamic var descr = ""
     dynamic var homepage = ""
-    var tags = [RString]()
-    
+    var tags = List<RString>()
+
     override static func primaryKey() -> String? {
-        
-        return "name"
+        return "homepage"
     }
     
     convenience required init(json: JSON) {
-        
+
         self.init()
-        
+
         title = json["title"].stringValue
         descr = json["description"].stringValue
         homepage = json["homepage"].stringValue
-        
+
         // loop tags
         for t in json["tags"].arrayValue {
             let name = t.stringValue
-            
+
             let tag = RString()
             tag.name = name
-            
+
             tags.append(tag)
         }
-        
+
         // get the cat
         let cat: Category?
         do {
@@ -56,10 +55,10 @@ class Repository: SwiftyJSONRealmObject {
         } catch _ {
             cat = nil
         }
-        
+
         // set the cat
         category = cat
-        
+
     }
-    
+
 }

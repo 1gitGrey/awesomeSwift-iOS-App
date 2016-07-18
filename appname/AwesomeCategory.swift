@@ -17,12 +17,12 @@ class Category: SwiftyJSONRealmObject {
     dynamic var descr = ""
     let repositories = LinkingObjects(fromType: Repository.self, property: "category")
 
-    
+
     override static func primaryKey() -> String? {
-        
-        return "name"
+
+        return "id"
     }
-    
+
     convenience required init(json: JSON) {
 
         self.init()

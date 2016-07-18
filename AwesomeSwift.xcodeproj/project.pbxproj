@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		486C32A01D008B17004CB872 /* RepositoryBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C329F1D008B17004CB872 /* RepositoryBrick.swift */; };
-		486C32A21D008B26004CB872 /* CategoryBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A11D008B26004CB872 /* CategoryBrick.swift */; };
 		486C32A41D008B9A004CB872 /* AwesomeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A31D008B9A004CB872 /* AwesomeCategory.swift */; };
 		486C32A61D0091A0004CB872 /* CategoryFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A51D0091A0004CB872 /* CategoryFeedVC.swift */; };
 		486C32A81D00948F004CB872 /* AwesomeSwiftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A71D00948F004CB872 /* AwesomeSwiftAPI.swift */; };
@@ -30,6 +29,7 @@
 		48AF9E9E1D3CE3BA001319D3 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48AF9E9C1D3CE3BA001319D3 /* CategoryCell.xib */; };
 		48AF9EA11D3CE3CF001319D3 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E9F1D3CE3CF001319D3 /* RepositoryCell.swift */; };
 		48AF9EA21D3CE3CF001319D3 /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48AF9EA01D3CE3CF001319D3 /* RepositoryCell.xib */; };
+		48AF9EA41D3D1A01001319D3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9EA31D3D1A01001319D3 /* BaseViewController.swift */; };
 		48D920411CC3BAD000B8DB73 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D920401CC3BAD000B8DB73 /* Configuration.swift */; };
 		48D920431CC3BB2800B8DB73 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D920421CC3BB2800B8DB73 /* Utilities.swift */; };
 		81170BCBF33DD3206F6FEE57 /* Pods_AwesomeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D733F3BF4200F332C33FA408 /* Pods_AwesomeSwift.framework */; };
@@ -59,7 +59,6 @@
 		3DD74480D3C6AFC5057CF3F4 /* Pods-AwesomeSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeSwiftTests/Pods-AwesomeSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4819D7801CAD793000271DD3 /* AwesomeSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		486C329F1D008B17004CB872 /* RepositoryBrick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryBrick.swift; sourceTree = "<group>"; };
-		486C32A11D008B26004CB872 /* CategoryBrick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBrick.swift; sourceTree = "<group>"; };
 		486C32A31D008B9A004CB872 /* AwesomeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeCategory.swift; sourceTree = "<group>"; };
 		486C32A51D0091A0004CB872 /* CategoryFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryFeedVC.swift; sourceTree = "<group>"; };
 		486C32A71D00948F004CB872 /* AwesomeSwiftAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeSwiftAPI.swift; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		48AF9E9C1D3CE3BA001319D3 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		48AF9E9F1D3CE3CF001319D3 /* RepositoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
 		48AF9EA01D3CE3CF001319D3 /* RepositoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
+		48AF9EA31D3D1A01001319D3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		48D920401CC3BAD000B8DB73 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		48D920421CC3BB2800B8DB73 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		75EFAE44D857A6CE68ADA93B /* Pods-AwesomeSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeSwiftTests/Pods-AwesomeSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				48AF9E971D3CB86C001319D3 /* cell */,
-				486C32A11D008B26004CB872 /* CategoryBrick.swift */,
 				486C32A51D0091A0004CB872 /* CategoryFeedVC.swift */,
 				48AF9E991D3CBAA1001319D3 /* CategoryViewController.swift */,
 			);
@@ -198,6 +197,7 @@
 				486C32AB1D00BD53004CB872 /* Category */,
 				4846D5221CC280220052C7BF /* Repository */,
 				48AF9E8D1D3CA744001319D3 /* CellManager.swift */,
+				48AF9EA31D3D1A01001319D3 /* BaseViewController.swift */,
 			);
 			name = "📱VController";
 			sourceTree = "<group>";
@@ -576,9 +576,9 @@
 				48AF9E871D3CA53C001319D3 /* OpenSourceIosAppsAPI.swift in Sources */,
 				48AF9E911D3CA7BE001319D3 /* CreditsCell.swift in Sources */,
 				48D920431CC3BB2800B8DB73 /* Utilities.swift in Sources */,
+				48AF9EA41D3D1A01001319D3 /* BaseViewController.swift in Sources */,
 				48AF9E9A1D3CBAA1001319D3 /* CategoryViewController.swift in Sources */,
 				48D920411CC3BAD000B8DB73 /* Configuration.swift in Sources */,
-				486C32A21D008B26004CB872 /* CategoryBrick.swift in Sources */,
 				486C32AA1D00B6DC004CB872 /* Styles.swift in Sources */,
 				48AF9EA11D3CE3CF001319D3 /* RepositoryCell.swift in Sources */,
 				486C32AF1D00E0C1004CB872 /* RepositoryFeedVC.swift in Sources */,
