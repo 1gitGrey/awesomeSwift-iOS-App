@@ -6,6 +6,7 @@
 //  Copyright © 2016 boostco.de. All rights reserved.
 //
 
+import Debug
 import SafariServices
 import SwiftyUserDefaults
 import UIKit
@@ -34,7 +35,7 @@ extension SFSafariViewController {
                                             handler: {
                                                 (previewAction, viewController) in
 
-                                                log.debug("Delete")
+                                                Debug.print("Delete")
 
         })
 
