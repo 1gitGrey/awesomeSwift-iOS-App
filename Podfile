@@ -18,6 +18,7 @@ target 'AwesomeSwift' do
     pod 'UITableViewCellManager'
     pod 'SwiftyJSONRealmObject'
     pod 'RealmSwift'
+    pod 'StoryboardEnum'
 end
 
 def testing_pods
