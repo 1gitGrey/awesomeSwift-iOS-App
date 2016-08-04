@@ -20,9 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+
         // white status bar
         UIApplication.sharedApplication()
-            .setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+            .setStatusBarStyle(UIStatusBarStyle.LightContent,
+                               animated: true)
+
+        // navigation bar
+        UINavigationBar.appearance().barTintColor = .awesomeColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+
+        // tab bar
+        UITabBar.appearance().tintColor = .awesomeColor()
 
         // push notifications enabled
         // TODO: remove pushes
@@ -34,12 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // crashlytics enabled
         Fabric.with([Crashlytics.self])
 
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let initialViewController = storyboard.instantiateInitialViewController()
-
-        self.window = UIWindow(frame:UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = initialViewController
-        self.window?.makeKeyAndVisible()
+        Storyboard.TabBar.show()
 
         return true
     }
