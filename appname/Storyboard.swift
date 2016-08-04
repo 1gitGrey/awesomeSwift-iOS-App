@@ -10,13 +10,13 @@ import StoryboardEnum
 
 enum Storyboard: StoryboardEnum {
 
-    case TabBar
+    case tabBar
 
-    case List
-    case Filter
-    case Detail
+    case list
+    case filter
+    case detail
 
-    case Credits
+    case credits
 
     var story: StoryboardVC {
         return StoryboardVC(inWindow: UIApplication.sharedApplication().windows.first!)
@@ -24,17 +24,17 @@ enum Storyboard: StoryboardEnum {
 
     var vc: UIViewController? {
         switch self {
-        case TabBar:
+        case tabBar:
             return story.getVC(fromStoryboard: "TabBar")
 
-        case List:
+        case list:
             return story.getVC(fromStoryboard: "List")
-        case Filter:
+        case filter:
             return story.getVC(fromStoryboard: "Filter")
-        case Detail:
+        case detail:
             return story.getVC(fromStoryboard: "Detail")
 
-        case Credits:
+        case credits:
             return story.getVC(fromStoryboard: "Credits")
         }
     }
