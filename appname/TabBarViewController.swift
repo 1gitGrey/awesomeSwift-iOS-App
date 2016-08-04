@@ -11,8 +11,8 @@ import UIKit
 
 // MARK: - Repository
 enum RepositoryType {
-    case AwesomeSwift
-    case OSApp
+    case awesomeSwift
+    case osApp
 }
 
 class TabBarViewController: UITabBarController {
@@ -27,7 +27,7 @@ class TabBarViewController: UITabBarController {
 
         // set contents
         // swiftlint:disable:next force_cast
-        let favorites = Storyboard.List.vc as! ListViewController
+        let favorites = Storyboard.list.vc as! ListViewController
         favorites.isFavorite = true
         let iconFav = UITabBarItem(title: "Favorites",
                                    image: UIImage(named: "favorite"),
@@ -35,23 +35,23 @@ class TabBarViewController: UITabBarController {
         favorites.tabBarItem = iconFav
 
         // swiftlint:disable:next force_cast
-        let listSwift = Storyboard.List.vc as! ListViewController
-        listSwift.api = .AwesomeSwift
+        let listSwift = Storyboard.list.vc as! ListViewController
+        listSwift.api = .awesomeSwift
         let iconSwift = UITabBarItem(title: "Swift",
                                      image: UIImage(named: "repos"),
                                      selectedImage: UIImage(named: "repos"))
         listSwift.tabBarItem = iconSwift
 
         // swiftlint:disable:next force_cast
-        let listOSA = Storyboard.List.vc as! ListViewController
-        listOSA.api = .OSApp
+        let listOSA = Storyboard.list.vc as! ListViewController
+        listOSA.api = .osApp
         let iconOSA = UITabBarItem(title: "OS Apps",
                                    image: UIImage(named: "repos"),
                                    selectedImage: UIImage(named: "repos"))
         listOSA.tabBarItem = iconOSA
 
 
-        let credits = Storyboard.Credits.vc
+        let credits = Storyboard.credits.vc
         let iconCredits = UITabBarItem(title: "Credits",
                                        image: UIImage(named: "credits"),
                                        selectedImage: UIImage(named: "credits"))
