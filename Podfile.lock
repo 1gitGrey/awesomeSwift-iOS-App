@@ -20,6 +20,7 @@ PODS:
   - RealmSwift (1.0.2):
     - Realm (= 1.0.2)
   - SimpleAnimation (0.2.0)
+  - StoryboardEnum (0.1.5)
   - SwiftDate (3.0.8)
   - SwiftyJSON (2.3.2)
   - SwiftyJSONRealmObject (0.1.0):
@@ -41,6 +42,7 @@ DEPENDENCIES:
   - RAMAnimatedTabBarController
   - RealmSwift
   - SimpleAnimation
+  - StoryboardEnum
   - SwiftDate
   - SwiftyJSON
   - SwiftyJSONRealmObject
@@ -62,6 +64,7 @@ SPEC CHECKSUMS:
   Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
   RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
   SimpleAnimation: e225b660010ea29d72d4889daebf07a3f4c6607f
+  StoryboardEnum: 4f40cb1fde58f65cfd2fc9692062fa711265dd92
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   SwiftyJSONRealmObject: 2a6364339c3c4fc7a6550189e19c9ea82a68fade
@@ -69,6 +72,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: e7c8197a9d4068702e7f2406a968cae413b8de27
   UITableViewCellManager: 0f7387f274c28fda9967c5879ccfcbf9d3bcb403
 
-PODFILE CHECKSUM: 6e4fa2cc2b5abd9be60aa7761a1399b5b2a35cf6
+PODFILE CHECKSUM: 3da4eb0e9ae803cede4c6ce48f41ca3b1bdcab07
 
 COCOAPODS: 1.0.1
