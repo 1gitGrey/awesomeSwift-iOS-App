@@ -16,7 +16,7 @@ class Category: SwiftyJSONRealmObject {
     dynamic var title = ""
     dynamic var descr = ""
     dynamic var parent = ""
-    var source: RepositoryType?
+    dynamic var source = 100
     let repositories = LinkingObjects(fromType: Repository.self, property: "category")
 
     override static func primaryKey() -> String? {
@@ -27,31 +27,30 @@ class Category: SwiftyJSONRealmObject {
     convenience required init(json: JSON) {
 
         self.init()
-        
         mapping(fromJson: json)
 
     }
-    
+
     convenience required init(withJson json: JSON, forRepository repo: RepositoryType) {
         self.init()
-        
+
         mapping(fromJson: json)
-        
-        source = repo
+
+        source = repo.hashValue
     }
-    
+
     func mapping(fromJson json: JSON) {
-        
+
         id = json["id"].stringValue
         title = json["title"].stringValue
-        
+
         if json["description"].stringValue.characters.count > 0 {
             descr = json["description"].stringValue
         }
-        
+
         if json["parent"].stringValue.characters.count > 0 {
             parent = json["parent"].stringValue
         }
     }
-    
+
 }

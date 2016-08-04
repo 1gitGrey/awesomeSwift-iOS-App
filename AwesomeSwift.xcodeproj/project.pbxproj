@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		486C32A01D008B17004CB872 /* RepositoryBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C329F1D008B17004CB872 /* RepositoryBrick.swift */; };
-		486C32A41D008B9A004CB872 /* AwesomeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A31D008B9A004CB872 /* AwesomeCategory.swift */; };
+		486C32A41D008B9A004CB872 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A31D008B9A004CB872 /* Category.swift */; };
 		486C32A81D00948F004CB872 /* AwesomeSwiftAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A71D00948F004CB872 /* AwesomeSwiftAPI.swift */; };
 		486C32AA1D00B6DC004CB872 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32A91D00B6DC004CB872 /* Styles.swift */; };
 		486C32AF1D00E0C1004CB872 /* RepositoryFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32AE1D00E0C1004CB872 /* RepositoryFeedVC.swift */; };
-		486C32B11D00E105004CB872 /* AwesomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32B01D00E105004CB872 /* AwesomeRepository.swift */; };
+		486C32B11D00E105004CB872 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C32B01D00E105004CB872 /* Repository.swift */; };
 		488F66D51C94636A00933CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488F66D41C94636A00933CA6 /* AppDelegate.swift */; };
 		488F66DA1C94636A00933CA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488F66D81C94636A00933CA6 /* Main.storyboard */; };
 		488F66DC1C94636A00933CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488F66DB1C94636A00933CA6 /* Assets.xcassets */; };
@@ -31,7 +31,6 @@
 		48AF9E921D3CA7BE001319D3 /* CreditsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48AF9E901D3CA7BE001319D3 /* CreditsCell.xib */; };
 		48AF9E941D3CA843001319D3 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E931D3CA843001319D3 /* CreditsViewController.swift */; };
 		48AF9E961D3CAA0D001319D3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E951D3CAA0D001319D3 /* SnapshotHelper.swift */; };
-		48AF9E9A1D3CBAA1001319D3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E991D3CBAA1001319D3 /* CategoryViewController.swift */; };
 		48AF9E9D1D3CE3BA001319D3 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E9B1D3CE3BA001319D3 /* CategoryCell.swift */; };
 		48AF9E9E1D3CE3BA001319D3 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48AF9E9C1D3CE3BA001319D3 /* CategoryCell.xib */; };
 		48AF9EA11D3CE3CF001319D3 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AF9E9F1D3CE3CF001319D3 /* RepositoryCell.swift */; };
@@ -65,11 +64,11 @@
 		3DD74480D3C6AFC5057CF3F4 /* Pods-AwesomeSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeSwiftTests/Pods-AwesomeSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4819D7801CAD793000271DD3 /* AwesomeSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		486C329F1D008B17004CB872 /* RepositoryBrick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryBrick.swift; sourceTree = "<group>"; };
-		486C32A31D008B9A004CB872 /* AwesomeCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeCategory.swift; sourceTree = "<group>"; };
+		486C32A31D008B9A004CB872 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		486C32A71D00948F004CB872 /* AwesomeSwiftAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeSwiftAPI.swift; sourceTree = "<group>"; };
 		486C32A91D00B6DC004CB872 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		486C32AE1D00E0C1004CB872 /* RepositoryFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryFeedVC.swift; sourceTree = "<group>"; };
-		486C32B01D00E105004CB872 /* AwesomeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeRepository.swift; sourceTree = "<group>"; };
+		486C32B01D00E105004CB872 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		4877098E1CC3EF4500C1E633 /* AwesomeSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		488F66D11C94636A00933CA6 /* AwesomeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488F66D41C94636A00933CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +92,6 @@
 		48AF9E901D3CA7BE001319D3 /* CreditsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditsCell.xib; sourceTree = "<group>"; };
 		48AF9E931D3CA843001319D3 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		48AF9E951D3CAA0D001319D3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
-		48AF9E991D3CBAA1001319D3 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		48AF9E9B1D3CE3BA001319D3 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		48AF9E9C1D3CE3BA001319D3 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		48AF9E9F1D3CE3CF001319D3 /* RepositoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
@@ -227,7 +225,7 @@
 		489102311CA9BDF80035403A /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				486C32B01D00E105004CB872 /* AwesomeRepository.swift */,
+				486C32B01D00E105004CB872 /* Repository.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -235,7 +233,7 @@
 		489102321CA9BE000035403A /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				486C32A31D008B9A004CB872 /* AwesomeCategory.swift */,
+				486C32A31D008B9A004CB872 /* Category.swift */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -254,7 +252,6 @@
 				48AF9E971D3CB86C001319D3 /* cell */,
 				489A399F1D5347590006D54C /* List.storyboard */,
 				489A39AF1D534AFA0006D54C /* ListViewController.swift */,
-				48AF9E991D3CBAA1001319D3 /* CategoryViewController.swift */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -610,7 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48AF9E9D1D3CE3BA001319D3 /* CategoryCell.swift in Sources */,
-				486C32A41D008B9A004CB872 /* AwesomeCategory.swift in Sources */,
+				486C32A41D008B9A004CB872 /* Category.swift in Sources */,
 				48AF9E871D3CA53C001319D3 /* OpenSourceIosAppsAPI.swift in Sources */,
 				489A39A61D5347A50006D54C /* Storyboard.swift in Sources */,
 				489A39A81D5349780006D54C /* TabBarViewController.swift in Sources */,
@@ -619,14 +616,13 @@
 				489A39B51D5381870006D54C /* DetailViewController.swift in Sources */,
 				48AF9EA41D3D1A01001319D3 /* BaseViewController.swift in Sources */,
 				489A39B01D534AFA0006D54C /* ListViewController.swift in Sources */,
-				48AF9E9A1D3CBAA1001319D3 /* CategoryViewController.swift in Sources */,
 				486C32AA1D00B6DC004CB872 /* Styles.swift in Sources */,
 				48AF9EA11D3CE3CF001319D3 /* RepositoryCell.swift in Sources */,
 				486C32AF1D00E0C1004CB872 /* RepositoryFeedVC.swift in Sources */,
 				488F66D51C94636A00933CA6 /* AppDelegate.swift in Sources */,
 				486C32A81D00948F004CB872 /* AwesomeSwiftAPI.swift in Sources */,
 				48AF9E941D3CA843001319D3 /* CreditsViewController.swift in Sources */,
-				486C32B11D00E105004CB872 /* AwesomeRepository.swift in Sources */,
+				486C32B11D00E105004CB872 /* Repository.swift in Sources */,
 				486C32A01D008B17004CB872 /* RepositoryBrick.swift in Sources */,
 				48AF9E8E1D3CA744001319D3 /* CellManager.swift in Sources */,
 			);

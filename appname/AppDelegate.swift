@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // crashlytics enabled
         Fabric.with([Crashlytics.self])
 
-        Storyboard.TabBar.show()
+        Storyboard.tabBar.show()
 
         return true
     }
