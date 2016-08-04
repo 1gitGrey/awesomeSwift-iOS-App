@@ -10,7 +10,7 @@ import Debug
 import UIKit
 
 // MARK: - Repository
-enum RepositoryType {
+public enum RepositoryType {
     case awesomeSwift
     case osApp
 }
