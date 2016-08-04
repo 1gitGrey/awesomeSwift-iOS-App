@@ -58,45 +58,45 @@ extension BaseViewController: AlamofireUIManagerDelegate{
     }
 
     func closeSpinner(spinner: UIView?) {
-        
+
         guard spinner != nil else { return }
-        
+
         if let act = spinner as? UIActivityIndicatorView {
             
             act.stopAnimating()
             act.removeFromSuperview()
-            
+
         }
-        
+
     }
-    
+
     func checkJson(json: JSON, showError: Bool, completionHandler: AFRequestCompletionHandler, errorHandler: AFRequestErrorHandler) {
-        
+
         if let errorStr = json["error"]["message"].string { // Probably authorization required
-            
+
             let error = NSError(domain: "json", code: 401, userInfo: ["info": errorStr])
-            
+
             errorHandler(error)
-            
+
         } else { completionHandler(json) }
-        
+
     }
-    
+
     func manageAlertError(error: NSError?, completition: AFRequestCompletionVoid) {
-        
+
         let alertController = UIAlertController(title: "Error", message: error?.description, preferredStyle: .Alert)
-        
+
         let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: { _ in
-            
+
             self.netManager.closeAlert()
             completition()
-            
+
         })
-        
+
         alertController.addAction(defaultAction)
-        
+
         presentViewController(alertController, animated: true, completion: nil)
-        
+
     }
 
 }
