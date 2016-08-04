@@ -9,9 +9,9 @@
 import UIKit
 
 class CreditsViewController: BaseViewController {
-    
+
     @IBOutlet weak var table: UITableView?
-    
+
     let creditsString = "# AwesomeSwift App\n\n" +
         "This app is powered by developers of libraries that share their job releasing open source projects on Github.\n\n" +
         "If you want to add a new library, feel free to contribute with a **Pull Request** at https://github.com/matteocrippa/awesome-swift\n\n\n" +
