@@ -30,6 +30,10 @@
                             <constraint firstItem="Qxi-Oz-bjc" firstAttribute="top" secondItem="z70-8a-fGy" secondAttribute="bottom" id="P3k-eN-ohR"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="table" destination="z70-8a-fGy" id="uNF-bk-9Ex"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dxg-hg-CBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
