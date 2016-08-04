@@ -7,6 +7,8 @@
 //
 
 import Debug
+import RealmSwift
+import SwiftyJSON
 import SafariServices
 import SwiftyUserDefaults
 import UIKit
