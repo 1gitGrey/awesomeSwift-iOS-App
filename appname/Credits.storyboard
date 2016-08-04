@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kmT-p2-Fiq">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Credits View Controller-->
+        <scene sceneID="ffN-gY-GGl">
+            <objects>
+                <viewController id="kmT-p2-Fiq" customClass="CreditsViewController" customModule="AwesomeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pSz-m9-1Uw"/>
+                        <viewControllerLayoutGuide type="bottom" id="h9k-84-yIb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F9C-hu-7fY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v7Y-rm-S0W">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kmT-p2-Fiq" id="ZQG-GZ-fnk"/>
+                                    <outlet property="delegate" destination="kmT-p2-Fiq" id="Ua5-KN-ghc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v7Y-rm-S0W" firstAttribute="leading" secondItem="F9C-hu-7fY" secondAttribute="leadingMargin" id="DHa-7w-apx"/>
+                            <constraint firstAttribute="trailing" secondItem="v7Y-rm-S0W" secondAttribute="trailing" id="HKh-v5-qjC"/>
+                            <constraint firstItem="v7Y-rm-S0W" firstAttribute="top" secondItem="pSz-m9-1Uw" secondAttribute="bottom" id="O6o-do-P9A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v7Y-rm-S0W" secondAttribute="trailing" id="ZSO-sR-6wi"/>
+                            <constraint firstItem="v7Y-rm-S0W" firstAttribute="top" secondItem="pSz-m9-1Uw" secondAttribute="bottom" id="ac2-ve-oJJ"/>
+                            <constraint firstItem="h9k-84-yIb" firstAttribute="top" secondItem="v7Y-rm-S0W" secondAttribute="bottom" id="eVs-r3-u83"/>
+                            <constraint firstItem="h9k-84-yIb" firstAttribute="top" secondItem="v7Y-rm-S0W" secondAttribute="bottom" id="euM-Sf-j3q"/>
+                            <constraint firstItem="v7Y-rm-S0W" firstAttribute="leading" secondItem="F9C-hu-7fY" secondAttribute="leading" id="kAD-LN-2zW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DHa-7w-apx"/>
+                                <exclude reference="O6o-do-P9A"/>
+                                <exclude reference="ZSO-sR-6wi"/>
+                                <exclude reference="euM-Sf-j3q"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="table" destination="v7Y-rm-S0W" id="QQx-cc-LjI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIN-zW-QeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="315"/>
+        </scene>
+    </scenes>
+</document>
