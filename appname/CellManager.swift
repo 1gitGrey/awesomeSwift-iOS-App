@@ -11,25 +11,27 @@ import UITableViewCellManager
 enum CellManager: UITableViewCellStructureDataSource {
 
     case creditsCell
-
     case repositoryCell
-
     case categoryCell
-
 
     var cellStructure: UITableViewCellStructure {
         
         switch self {
-            
-        case .creditsCell:
-            return UITableViewCellStructure(type: CreditsCell(), identifier: "CreditsCell", nib: "CreditsCell")
 
+        case .creditsCell:
+            return UITableViewCellStructure(type: CreditsCell(),
+                                            identifier: "CreditsCell",
+                                            nib: "CreditsCell")
 
         case .repositoryCell:
-            return UITableViewCellStructure(type: RepositoryCell(), identifier: "RepositoryCell", nib: "RepositoryCell")
+            return UITableViewCellStructure(type: RepositoryCell(),
+                                            identifier: "RepositoryCell",
+                                            nib: "RepositoryCell")
 
         case .categoryCell:
-            return UITableViewCellStructure(type: CategoryCell(), identifier: "CategoryCell", nib: "CategoryCell")
+            return UITableViewCellStructure(type: CategoryCell(),
+                                            identifier: "CategoryCell",
+                                            nib: "CategoryCell")
         }
 
     }
