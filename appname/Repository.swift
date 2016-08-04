@@ -29,7 +29,7 @@ class Repository: SwiftyJSONRealmObject {
     override static func primaryKey() -> String? {
         return "homepage"
     }
-    
+
     convenience required init(json: JSON) {
 
         self.init()
