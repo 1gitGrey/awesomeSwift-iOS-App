@@ -19,6 +19,7 @@ class CreditsViewController: BaseViewController {
         " - Alamofire\n" +
         " - AlamofireUIManager\n" +
         " - AlamofireRouter\n" +
+        " - Debug\n" +
         " - DGEElasticPullToRefresh\n" +
         " - Fabric\n" +
         " - Fastlane tools\n" +
