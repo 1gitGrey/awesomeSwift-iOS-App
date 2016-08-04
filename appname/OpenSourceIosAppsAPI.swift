@@ -14,17 +14,17 @@ enum OpenSourceIosAppsAPI: RouterProtocol {
     case getJson()
     
     var router: Router { return Router(baseURL: "https://raw.githubusercontent.com/dkhamsing/open-source-ios-apps/master") }
-    
+
     var URLRequest: NSMutableURLRequest {
-        
+
         switch self {
-            
+
         case .getJson():
-            
+
             return router.endPoint(path: "/contents.json")
-            
+
         }
-        
+
     }
-    
+
 }
