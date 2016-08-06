@@ -31,3 +31,17 @@ target 'AwesomeSwiftTests' do
     testing_pods
 end
 
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == 'Debug'
+            target.build_configurations.each do |config|
+                if config.name == 'Debug'
+                    config.build_settings['OTHER_SWIFT_FLAGS'] = '-DDEBUG'
+                    else
+                    config.build_settings['OTHER_SWIFT_FLAGS'] = ''
+                end
+            end
+        end
+    end
+end
+
