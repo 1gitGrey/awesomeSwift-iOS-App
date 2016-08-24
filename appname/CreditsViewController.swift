@@ -10,7 +10,7 @@ import UIKit
 
 class CreditsViewController: BaseViewController {
 
-    @IBOutlet weak var table: UITableView?
+    @IBOutlet weak var table: UITableView!
 
     let creditsString = "# AwesomeSwift App\n\n" +
         "This app is powered by developers of libraries that share their job releasing open source projects on Github.\n\n" +
@@ -38,8 +38,7 @@ class CreditsViewController: BaseViewController {
 
         title = "Credits"
 
-        guard let t = table else { return }
-        t.estimatedRowHeight = 200
+        table.estimatedRowHeight = 200
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,8 +47,8 @@ class CreditsViewController: BaseViewController {
 
 }
 
-// MARK: - Table handler
-extension CreditsViewController: UITableViewDataSource {
+private typealias TableManager = CreditsViewController
+extension TableManager: UITableViewDataSource {
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
