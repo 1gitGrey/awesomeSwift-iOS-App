@@ -11,7 +11,7 @@ import SwiftyMarkdown
 
 class CreditsCell: UITableViewCell {
 
-    @IBOutlet weak var lblContent: UILabel?
+    @IBOutlet weak var lblContent: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,10 +24,9 @@ class CreditsCell: UITableViewCell {
     override func setUI(object: AnyObject?) {
 
         guard let text = object as? String else { return }
-        guard let lbl = lblContent else { return }
 
         let markDown = SwiftyMarkdown(string: text)
-        lbl.attributedText = markDown.attributedString()
+        lblContent.attributedText = markDown.attributedString()
 
     }
 }
