@@ -48,7 +48,7 @@ class Repository: SwiftyJSONRealmObject {
             tags.append(tag)
         }
 
-        // get the cat
+        // get the category
         let cat: Category?
         do {
             cat = try Realm().objects(Category.self).filter("id = '\(json["category"].stringValue)'").first!
@@ -56,7 +56,7 @@ class Repository: SwiftyJSONRealmObject {
             cat = nil
         }
 
-        // set the cat
+        // set the category
         category = cat
 
     }
