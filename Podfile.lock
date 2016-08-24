@@ -5,12 +5,12 @@ PODS:
   - AlamofireUIManager (0.1.2):
     - Alamofire (~> 3.2)
     - SwiftyJSON
-  - Crashlytics (3.7.2):
+  - Crashlytics (3.7.3):
     - Fabric (~> 1.6.3)
-  - Debug (0.2.0):
+  - Debug (0.2.1):
     - AlamofireRouter (~> 0.1)
   - DGElasticPullToRefresh_CanStartLoading (1.0.3.2)
-  - Fabric (1.6.7)
+  - Fabric (1.6.8)
   - Nimble (4.1.0)
   - Quick (0.9.3)
   - RAMAnimatedTabBarController (1.5.3)
@@ -27,7 +27,7 @@ PODS:
     - RealmSwift (~> 1.0)
     - SwiftyJSON
   - SwiftyMarkdown (0.2.3)
-  - SwiftyUserDefaults (2.2.0)
+  - SwiftyUserDefaults (2.2.1)
   - UITableViewCellManager (0.1.1)
 
 DEPENDENCIES:
@@ -54,10 +54,10 @@ SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   AlamofireRouter: 750e98f8387e95604d57a6260a145d93bd19b9a7
   AlamofireUIManager: fcd0f7eaba86cbdee74ce06639ab1349db68d099
-  Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
-  Debug: 8696837f34978bde6912d1d08e3d03b737868d8d
+  Crashlytics: 76f6beaff70acf226139582c09c78461597c2b98
+  Debug: 46ebed36c9873f0ae7ce2815bd1cc574eb10f876
   DGElasticPullToRefresh_CanStartLoading: '09aba716bb6dff732ac5eb58b11cc215bbb743bb'
-  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
   Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
   Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
   RAMAnimatedTabBarController: 04b624cf8958a0032bf7fa9c0f2c515f59d30b9c
@@ -69,7 +69,7 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   SwiftyJSONRealmObject: 2a6364339c3c4fc7a6550189e19c9ea82a68fade
   SwiftyMarkdown: 62920e177bbd441f2e4427e164e1674b1be46b39
-  SwiftyUserDefaults: e7c8197a9d4068702e7f2406a968cae413b8de27
+  SwiftyUserDefaults: 7abdba50a50ea0c18ee8903af3c88e4c1cb8448d
   UITableViewCellManager: 0f7387f274c28fda9967c5879ccfcbf9d3bcb403
 
 PODFILE CHECKSUM: 85a09cf663b6d4ec063babf3dae0f8e9349f1890
